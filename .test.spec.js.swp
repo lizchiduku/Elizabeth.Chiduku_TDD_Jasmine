@@ -1,0 +1,30 @@
+function sum1ToN(N) {
+    var total = 0;
+      for(var i = 1; i <= 255; i++){
+        total += i;
+      }
+      return total;
+  }
+
+  //return the sum of the first number in the array and the last number in the array
+function sumFirstLast(arr){
+    let n1 = Number(arr[0]);
+    let n2 = Number(arr[arr.length - 1]);
+    console.log(n1 + n2);
+}
+sumFirstLast([20, 30, 40]);
+
+//return largest number in the array
+
+function returnLargest(a){
+    arr = a;  
+    max = 0;
+    newArr = [];
+    for(i = 0; i < arr.length; i++){
+        if(arr[i] > max){
+            max = arr[i];
+        }
+    }
+    newArr.push(max);
+    return newArr
+}
